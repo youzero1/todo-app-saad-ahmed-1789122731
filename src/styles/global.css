@@ -4,8 +4,55 @@
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Accent palette driven by data-theme on <html>. Blue is the default. */
+:root,
+[data-theme="blue"] {
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-strong: #1e40af;
+  --accent-soft: #dbeafe;
+  --accent-soft-hover: #eff6ff;
+  --accent-border: #93c5fd;
+}
+
+[data-theme="red"] {
+  --accent: #dc2626;
+  --accent-hover: #b91c1c;
+  --accent-strong: #991b1b;
+  --accent-soft: #fee2e2;
+  --accent-soft-hover: #fef2f2;
+  --accent-border: #fca5a5;
+}
+
+[data-theme="yellow"] {
+  --accent: #d97706;
+  --accent-hover: #b45309;
+  --accent-strong: #92400e;
+  --accent-soft: #fef3c7;
+  --accent-soft-hover: #fffbeb;
+  --accent-border: #fcd34d;
+}
+
+[data-theme="green"] {
+  --accent: #059669;
+  --accent-hover: #047857;
+  --accent-strong: #065f46;
+  --accent-soft: #d1fae5;
+  --accent-soft-hover: #ecfdf5;
+  --accent-border: #6ee7b7;
+}
+
+[data-theme="purple"] {
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+  --accent-strong: #5b21b6;
+  --accent-soft: #ede9fe;
+  --accent-soft-hover: #f5f3ff;
+  --accent-border: #c4b5fd;
+}
+
 :root { font-family: var(--font-sans); color: #172033; background: #f7f8fc; font-synthesis: none; }
 body { margin: 0; min-width: 320px; }
 button, input { font: inherit; }
 button { cursor: pointer; }
-*:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }

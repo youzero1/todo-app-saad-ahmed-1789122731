@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App</title>
+    <script>
+      // Apply the saved accent theme before first paint to avoid a color flash.
+      (function () {
+        try {
+          var saved = localStorage.getItem('minimal-todos-theme');
+          var allowed = ['blue', 'red', 'yellow', 'green', 'purple'];
+          document.documentElement.setAttribute(
+            'data-theme',
+            allowed.indexOf(saved) > -1 ? saved : 'blue'
+          );
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'blue');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
