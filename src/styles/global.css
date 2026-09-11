@@ -8,4 +8,4 @@
 body { margin: 0; min-width: 320px; }
 button, input { font: inherit; }
 button { cursor: pointer; }
-*:focus-visible { outline: 3px solid #8b9cf6; outline-offset: 3px; }
+*:focus-visible { outline: 3px solid #d97706; outline-offset: 3px; }

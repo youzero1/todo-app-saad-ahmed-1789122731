@@ -18,7 +18,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
       {editing ? <input ref={inputRef} value={text} onChange={(event) => setText(event.target.value)} onBlur={save} onKeyDown={keyDown} aria-label="Edit task" className="min-w-0 flex-1 rounded-lg border border-red-300 px-2 py-1 text-[15px] outline-none" /> : <button type="button" onClick={() => setEditing(true)} className={`min-w-0 flex-1 text-left text-[15px] ${todo.completed ? 'text-slate-400 line-through' : 'text-slate-700'}`}>{todo.text}</button>}
       <div className="flex shrink-0 gap-1 opacity-100 sm:opacity-0 sm:transition sm:group-hover:opacity-100 sm:group-focus-within:opacity-100">
         <button type="button" aria-label={`Edit ${todo.text}`} onClick={() => setEditing(true)} className="rounded-lg px-2 py-1 text-xs font-semibold text-slate-400 hover:bg-slate-100 hover:text-red-600">Edit</button>
-        <button type="button" aria-label={`Delete ${todo.text}`} onClick={onDelete} className="rounded-lg px-2 py-1 text-xs font-semibold text-slate-400 hover:bg-rose-50 hover:text-rose-500">Delete</button>
+        <button type="button" aria-label={`Delete ${todo.text}`} onClick={onDelete} className="rounded-lg px-2 py-1 text-xs font-semibold text-slate-400 hover:bg-amber-50 hover:text-amber-700">Delete</button>
       </div>
     </li>
   );

@@ -14,7 +14,7 @@ function HomePage() {
         <header className="mb-10">
           <div className="mb-6 flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-red-600">Daily focus</span>
-            <span className="rounded-full bg-red-50 px-3 py-1.5 text-xs font-semibold text-red-600">{remaining} {remaining === 1 ? 'task' : 'tasks'} remaining</span>
+            <span className="rounded-full bg-amber-100 px-3 py-1.5 text-xs font-semibold text-amber-800">{remaining} {remaining === 1 ? 'task' : 'tasks'} remaining</span>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-[#172033] sm:text-5xl">A little more<br /><span className="text-red-600">done today.</span></h1>
           <p className="mt-4 max-w-md text-base leading-7 text-slate-500">Keep your priorities close, make progress visible, and leave the rest for tomorrow.</p>
