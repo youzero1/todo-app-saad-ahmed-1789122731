@@ -1,5 +1,5 @@
 ---
-status: pending
+status: implemented
 title: Clean Minimal Personal Todo App
 ---
 
